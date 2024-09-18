@@ -14,12 +14,12 @@ gdjs.MainCode.GDOnScreenControlsButtonObjects1= [];
 gdjs.MainCode.GDOnScreenControlsButtonObjects2= [];
 
 
-gdjs.MainCode.asyncCallback7817732 = function (runtimeScene, asyncObjectsList) {
+gdjs.MainCode.asyncCallback10935124 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.MainCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Arman"), gdjs.MainCode.GDArmanObjects2);
 
 {for(var i = 0, len = gdjs.MainCode.GDArmanObjects2.length ;i < len;++i) {
-    gdjs.MainCode.GDArmanObjects2[i].getBehavior("Resizable").setSize(700, 700);
+    gdjs.MainCode.GDArmanObjects2[i].getBehavior("Resizable").setSize(386, 524);
 }
 }gdjs.MainCode.localVariables.length = 0;
 }
@@ -33,7 +33,7 @@ gdjs.MainCode.eventsList0 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.MainCode.localVariables);
 for (const obj of gdjs.MainCode.GDArmanObjects1) asyncObjectsList.addObject("Arman", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.MainCode.asyncCallback7817732(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.MainCode.asyncCallback10935124(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -104,7 +104,7 @@ if (isConditionTrue_0) {
 {runtimeScene.getGame().getVariables().getFromIndex(0).add(runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber());
 }{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "coin", runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber());
 }{for(var i = 0, len = gdjs.MainCode.GDArmanObjects1.length ;i < len;++i) {
-    gdjs.MainCode.GDArmanObjects1[i].getBehavior("Resizable").setSize(675, 675);
+    gdjs.MainCode.GDArmanObjects1[i].getBehavior("Resizable").setSize(375, 515);
 }
 }
 { //Subevents

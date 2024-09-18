@@ -17,7 +17,7 @@ gdjs.ShopCode.GDplus1000001Objects2= [];
 gdjs.ShopCode.GDplus1000001Objects3= [];
 
 
-gdjs.ShopCode.asyncCallback10532260 = function (runtimeScene, asyncObjectsList) {
+gdjs.ShopCode.asyncCallback10967924 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ShopCode.localVariables);
 {runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
 }{gdjs.evtTools.storage.deleteElementFromJSONFile("storage", "coin");
@@ -34,14 +34,14 @@ const parentAsyncObjectsList = asyncObjectsList;
 {
 const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ShopCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.ShopCode.asyncCallback10532260(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.ShopCode.asyncCallback10967924(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.ShopCode.asyncCallback8612212 = function (runtimeScene, asyncObjectsList) {
+};gdjs.ShopCode.asyncCallback10967276 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.ShopCode.localVariables);
 gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.ShopCode.GDNewTextObjects2);
 {runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(1);
@@ -63,7 +63,7 @@ gdjs.ShopCode.eventsList1 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.ShopCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.ShopCode.asyncCallback8612212(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.ShopCode.asyncCallback10967276(runtimeScene, asyncObjectsList)));
 }
 }
 

@@ -6,11 +6,9 @@ gdjs.LoadCode.GDNewText2Objects1= [];
 gdjs.LoadCode.GDNewText2Objects2= [];
 gdjs.LoadCode.GDNewText3Objects1= [];
 gdjs.LoadCode.GDNewText3Objects2= [];
-gdjs.LoadCode.GDLoadingObjects1= [];
-gdjs.LoadCode.GDLoadingObjects2= [];
 
 
-gdjs.LoadCode.asyncCallback9479340 = function (runtimeScene, asyncObjectsList) {
+gdjs.LoadCode.asyncCallback10921564 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.LoadCode.localVariables);
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Main", false);
 }gdjs.LoadCode.localVariables.length = 0;
@@ -24,7 +22,7 @@ gdjs.LoadCode.eventsList0 = function(runtimeScene) {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.LoadCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(gdjs.randomInRange(1, 3)), (runtimeScene) => (gdjs.LoadCode.asyncCallback9479340(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(gdjs.randomInRange(1, 3)), (runtimeScene) => (gdjs.LoadCode.asyncCallback10921564(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -61,8 +59,6 @@ gdjs.LoadCode.GDNewText2Objects1.length = 0;
 gdjs.LoadCode.GDNewText2Objects2.length = 0;
 gdjs.LoadCode.GDNewText3Objects1.length = 0;
 gdjs.LoadCode.GDNewText3Objects2.length = 0;
-gdjs.LoadCode.GDLoadingObjects1.length = 0;
-gdjs.LoadCode.GDLoadingObjects2.length = 0;
 
 gdjs.LoadCode.eventsList1(runtimeScene);
 
