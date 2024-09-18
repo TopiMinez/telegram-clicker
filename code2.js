@@ -2,91 +2,19 @@ gdjs.ShopCode = {};
 gdjs.ShopCode.localVariables = [];
 gdjs.ShopCode.GDBackObjects1= [];
 gdjs.ShopCode.GDBackObjects2= [];
-gdjs.ShopCode.GDBackObjects3= [];
 gdjs.ShopCode.GDplus1000000Objects1= [];
 gdjs.ShopCode.GDplus1000000Objects2= [];
-gdjs.ShopCode.GDplus1000000Objects3= [];
 gdjs.ShopCode.GDNewTiledSpriteObjects1= [];
 gdjs.ShopCode.GDNewTiledSpriteObjects2= [];
-gdjs.ShopCode.GDNewTiledSpriteObjects3= [];
-gdjs.ShopCode.GDNewTextObjects1= [];
-gdjs.ShopCode.GDNewTextObjects2= [];
-gdjs.ShopCode.GDNewTextObjects3= [];
-gdjs.ShopCode.GDplus1000001Objects1= [];
-gdjs.ShopCode.GDplus1000001Objects2= [];
-gdjs.ShopCode.GDplus1000001Objects3= [];
+gdjs.ShopCode.GDUpgradePriceObjects1= [];
+gdjs.ShopCode.GDUpgradePriceObjects2= [];
+gdjs.ShopCode.GDUpgradeClickObjects1= [];
+gdjs.ShopCode.GDUpgradeClickObjects2= [];
+gdjs.ShopCode.GDBalanceObjects1= [];
+gdjs.ShopCode.GDBalanceObjects2= [];
 
 
-gdjs.ShopCode.asyncCallback10967924 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.ShopCode.localVariables);
-{runtimeScene.getGame().getVariables().getFromIndex(0).setNumber(0);
-}{gdjs.evtTools.storage.deleteElementFromJSONFile("storage", "coin");
-}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Load", false);
-}gdjs.ShopCode.localVariables.length = 0;
-}
-gdjs.ShopCode.eventsList0 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-{
-const parentAsyncObjectsList = asyncObjectsList;
-{
-const asyncObjectsList = gdjs.LongLivedObjectsList.from(parentAsyncObjectsList);
-asyncObjectsList.backupLocalVariablesContainers(gdjs.ShopCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.ShopCode.asyncCallback10967924(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.ShopCode.asyncCallback10967276 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.ShopCode.localVariables);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.ShopCode.GDNewTextObjects2);
-{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(1);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "toggle", 1);
-}{for(var i = 0, len = gdjs.ShopCode.GDNewTextObjects2.length ;i < len;++i) {
-    gdjs.ShopCode.GDNewTextObjects2[i].getBehavior("Text").setText("...");
-}
-}
-{ //Subevents
-gdjs.ShopCode.eventsList0(runtimeScene, asyncObjectsList);} //End of subevents
-gdjs.ShopCode.localVariables.length = 0;
-}
-gdjs.ShopCode.eventsList1 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.ShopCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(2), (runtimeScene) => (gdjs.ShopCode.asyncCallback10967276(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.ShopCode.eventsList2 = function(runtimeScene) {
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 1;
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("plus1000000"), gdjs.ShopCode.GDplus1000000Objects1);
-{for(var i = 0, len = gdjs.ShopCode.GDplus1000000Objects1.length ;i < len;++i) {
-    gdjs.ShopCode.GDplus1000000Objects1[i].deleteFromScene(runtimeScene);
-}
-}}
-
-}
-
+gdjs.ShopCode.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -111,40 +39,12 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("plus1000000"), gdjs.ShopCode.GDplus1000000Objects1);
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ShopCode.GDplus1000000Objects1.length;i<l;++i) {
-    if ( gdjs.ShopCode.GDplus1000000Objects1[i].getBehavior("ButtonFSM").IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
-        isConditionTrue_0 = true;
-        gdjs.ShopCode.GDplus1000000Objects1[k] = gdjs.ShopCode.GDplus1000000Objects1[i];
-        ++k;
-    }
-}
-gdjs.ShopCode.GDplus1000000Objects1.length = k;
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = !(gdjs.evtTools.camera.layerIsVisible(runtimeScene, "bro"));
-}
-if (isConditionTrue_0) {
-{gdjs.evtTools.camera.showLayer(runtimeScene, "bro");
-}
-{ //Subevents
-gdjs.ShopCode.eventsList1(runtimeScene);} //End of subevents
-}
-
-}
-
-
-{
-
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-{gdjs.evtTools.storage.readNumberFromJSONFile("storage", "toggle", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0));
+{gdjs.evtTools.storage.readNumberFromJSONFile("storage", "cul", runtimeScene, runtimeScene.getScene().getVariables().getFromIndex(0));
 }}
 
 }
@@ -152,27 +52,135 @@ if (isConditionTrue_0) {
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("plus1000001"), gdjs.ShopCode.GDplus1000001Objects1);
+gdjs.copyArray(runtimeScene.getObjects("UpgradeClick"), gdjs.ShopCode.GDUpgradeClickObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.ShopCode.GDplus1000001Objects1.length;i<l;++i) {
-    if ( gdjs.ShopCode.GDplus1000001Objects1[i].getBehavior("ButtonFSM").IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.ShopCode.GDUpgradeClickObjects1.length;i<l;++i) {
+    if ( gdjs.ShopCode.GDUpgradeClickObjects1[i].getBehavior("ButtonFSM").IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.ShopCode.GDplus1000001Objects1[k] = gdjs.ShopCode.GDplus1000001Objects1[i];
+        gdjs.ShopCode.GDUpgradeClickObjects1[k] = gdjs.ShopCode.GDUpgradeClickObjects1[i];
         ++k;
     }
 }
-gdjs.ShopCode.GDplus1000001Objects1.length = k;
+gdjs.ShopCode.GDUpgradeClickObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)) >= 15000;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 3;
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(4);
+}{runtimeScene.getGame().getVariables().getFromIndex(1).add(1);
+}{runtimeScene.getGame().getVariables().getFromIndex(0).sub(15000);
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "coin", runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber());
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "clck", runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber());
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "cul", runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber());
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("UpgradeClick"), gdjs.ShopCode.GDUpgradeClickObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ShopCode.GDUpgradeClickObjects1.length;i<l;++i) {
+    if ( gdjs.ShopCode.GDUpgradeClickObjects1[i].getBehavior("ButtonFSM").IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.ShopCode.GDUpgradeClickObjects1[k] = gdjs.ShopCode.GDUpgradeClickObjects1[i];
+        ++k;
+    }
+}
+gdjs.ShopCode.GDUpgradeClickObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)) >= 5000;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 2;
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(3);
+}{runtimeScene.getGame().getVariables().getFromIndex(1).add(1);
+}{runtimeScene.getGame().getVariables().getFromIndex(0).sub(5000);
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "coin", runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber());
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "clck", runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber());
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "cul", runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber());
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("UpgradeClick"), gdjs.ShopCode.GDUpgradeClickObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ShopCode.GDUpgradeClickObjects1.length;i<l;++i) {
+    if ( gdjs.ShopCode.GDUpgradeClickObjects1[i].getBehavior("ButtonFSM").IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.ShopCode.GDUpgradeClickObjects1[k] = gdjs.ShopCode.GDUpgradeClickObjects1[i];
+        ++k;
+    }
+}
+gdjs.ShopCode.GDUpgradeClickObjects1.length = k;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)) >= 1000;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 1;
+}
+}
+if (isConditionTrue_0) {
+{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(2);
+}{runtimeScene.getGame().getVariables().getFromIndex(1).add(1);
+}{runtimeScene.getGame().getVariables().getFromIndex(0).sub(1000);
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "coin", runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber());
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "clck", runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber());
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "cul", runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber());
+}}
+
+}
+
+
+{
+
+gdjs.copyArray(runtimeScene.getObjects("UpgradeClick"), gdjs.ShopCode.GDUpgradeClickObjects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.ShopCode.GDUpgradeClickObjects1.length;i<l;++i) {
+    if ( gdjs.ShopCode.GDUpgradeClickObjects1[i].getBehavior("ButtonFSM").IsClicked((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.ShopCode.GDUpgradeClickObjects1[k] = gdjs.ShopCode.GDUpgradeClickObjects1[i];
+        ++k;
+    }
+}
+gdjs.ShopCode.GDUpgradeClickObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(0)) >= 100;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 0;
+}
 }
 if (isConditionTrue_0) {
-{runtimeScene.getGame().getVariables().getFromIndex(1).add(1);
+{runtimeScene.getScene().getVariables().getFromIndex(0).setNumber(1);
+}{runtimeScene.getGame().getVariables().getFromIndex(1).add(1);
 }{runtimeScene.getGame().getVariables().getFromIndex(0).sub(100);
-}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "click", runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber());
 }{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "coin", runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber());
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "clck", runtimeScene.getGame().getVariables().getFromIndex(1).getAsNumber());
+}{gdjs.evtTools.storage.writeNumberInJSONFile("storage", "cul", runtimeScene.getScene().getVariables().getFromIndex(0).getAsNumber());
 }}
 
 }
@@ -183,11 +191,73 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(1)) >= 2;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 4;
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("plus1000001"), gdjs.ShopCode.GDplus1000001Objects1);
-{for(var i = 0, len = gdjs.ShopCode.GDplus1000001Objects1.length ;i < len;++i) {
-    gdjs.ShopCode.GDplus1000001Objects1[i].deleteFromScene(runtimeScene);
+gdjs.copyArray(runtimeScene.getObjects("UpgradePrice"), gdjs.ShopCode.GDUpgradePriceObjects1);
+{for(var i = 0, len = gdjs.ShopCode.GDUpgradePriceObjects1.length ;i < len;++i) {
+    gdjs.ShopCode.GDUpgradePriceObjects1[i].getBehavior("Text").setText("Максимум");
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 3;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("UpgradePrice"), gdjs.ShopCode.GDUpgradePriceObjects1);
+{for(var i = 0, len = gdjs.ShopCode.GDUpgradePriceObjects1.length ;i < len;++i) {
+    gdjs.ShopCode.GDUpgradePriceObjects1[i].getBehavior("Text").setText("15000 арман-коинов");
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 2;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("UpgradePrice"), gdjs.ShopCode.GDUpgradePriceObjects1);
+{for(var i = 0, len = gdjs.ShopCode.GDUpgradePriceObjects1.length ;i < len;++i) {
+    gdjs.ShopCode.GDUpgradePriceObjects1[i].getBehavior("Text").setText("5000 арман-коинов");
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(0)) == 1;
+if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("UpgradePrice"), gdjs.ShopCode.GDUpgradePriceObjects1);
+{for(var i = 0, len = gdjs.ShopCode.GDUpgradePriceObjects1.length ;i < len;++i) {
+    gdjs.ShopCode.GDUpgradePriceObjects1[i].getBehavior("Text").setText("1000 арман-коинов");
+}
+}}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+gdjs.copyArray(runtimeScene.getObjects("Balance"), gdjs.ShopCode.GDBalanceObjects1);
+{for(var i = 0, len = gdjs.ShopCode.GDBalanceObjects1.length ;i < len;++i) {
+    gdjs.ShopCode.GDBalanceObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(0).getAsString());
 }
 }}
 
@@ -201,21 +271,18 @@ runtimeScene.getOnceTriggers().startNewFrame();
 
 gdjs.ShopCode.GDBackObjects1.length = 0;
 gdjs.ShopCode.GDBackObjects2.length = 0;
-gdjs.ShopCode.GDBackObjects3.length = 0;
 gdjs.ShopCode.GDplus1000000Objects1.length = 0;
 gdjs.ShopCode.GDplus1000000Objects2.length = 0;
-gdjs.ShopCode.GDplus1000000Objects3.length = 0;
 gdjs.ShopCode.GDNewTiledSpriteObjects1.length = 0;
 gdjs.ShopCode.GDNewTiledSpriteObjects2.length = 0;
-gdjs.ShopCode.GDNewTiledSpriteObjects3.length = 0;
-gdjs.ShopCode.GDNewTextObjects1.length = 0;
-gdjs.ShopCode.GDNewTextObjects2.length = 0;
-gdjs.ShopCode.GDNewTextObjects3.length = 0;
-gdjs.ShopCode.GDplus1000001Objects1.length = 0;
-gdjs.ShopCode.GDplus1000001Objects2.length = 0;
-gdjs.ShopCode.GDplus1000001Objects3.length = 0;
+gdjs.ShopCode.GDUpgradePriceObjects1.length = 0;
+gdjs.ShopCode.GDUpgradePriceObjects2.length = 0;
+gdjs.ShopCode.GDUpgradeClickObjects1.length = 0;
+gdjs.ShopCode.GDUpgradeClickObjects2.length = 0;
+gdjs.ShopCode.GDBalanceObjects1.length = 0;
+gdjs.ShopCode.GDBalanceObjects2.length = 0;
 
-gdjs.ShopCode.eventsList2(runtimeScene);
+gdjs.ShopCode.eventsList0(runtimeScene);
 
 return;
 

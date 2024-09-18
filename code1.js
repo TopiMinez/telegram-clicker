@@ -6,12 +6,12 @@ gdjs.MainCode.GDMetalRedBarObjects1= [];
 gdjs.MainCode.GDMetalRedBarObjects2= [];
 gdjs.MainCode.GDShopObjects1= [];
 gdjs.MainCode.GDShopObjects2= [];
-gdjs.MainCode.GDNewTextObjects1= [];
-gdjs.MainCode.GDNewTextObjects2= [];
 gdjs.MainCode.GDLevelObjects1= [];
 gdjs.MainCode.GDLevelObjects2= [];
 gdjs.MainCode.GDOnScreenControlsButtonObjects1= [];
 gdjs.MainCode.GDOnScreenControlsButtonObjects2= [];
+gdjs.MainCode.GDBalanceObjects1= [];
+gdjs.MainCode.GDBalanceObjects2= [];
 
 
 gdjs.MainCode.asyncCallback10935124 = function (runtimeScene, asyncObjectsList) {
@@ -68,11 +68,11 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
+gdjs.copyArray(runtimeScene.getObjects("Balance"), gdjs.MainCode.GDBalanceObjects1);
 gdjs.copyArray(runtimeScene.getObjects("MetalRedBar"), gdjs.MainCode.GDMetalRedBarObjects1);
-gdjs.copyArray(runtimeScene.getObjects("NewText"), gdjs.MainCode.GDNewTextObjects1);
 gdjs.copyArray(runtimeScene.getObjects("OnScreenControlsButton"), gdjs.MainCode.GDOnScreenControlsButtonObjects1);
-{for(var i = 0, len = gdjs.MainCode.GDNewTextObjects1.length ;i < len;++i) {
-    gdjs.MainCode.GDNewTextObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(0).getAsString());
+{for(var i = 0, len = gdjs.MainCode.GDBalanceObjects1.length ;i < len;++i) {
+    gdjs.MainCode.GDBalanceObjects1[i].getBehavior("Text").setText(runtimeScene.getGame().getVariables().getFromIndex(0).getAsString());
 }
 }{for(var i = 0, len = gdjs.MainCode.GDMetalRedBarObjects1.length ;i < len;++i) {
     gdjs.MainCode.GDMetalRedBarObjects1[i].SetValue(runtimeScene.getGame().getVariables().getFromIndex(0).getAsNumber(), (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -114,6 +114,19 @@ gdjs.MainCode.eventsList0(runtimeScene);} //End of subevents
 }
 
 
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+isConditionTrue_0 = gdjs.evtTools.input.isKeyPressed(runtimeScene, "a");
+if (isConditionTrue_0) {
+{runtimeScene.getGame().getVariables().getFromIndex(0).add(999);
+}}
+
+}
+
+
 };
 
 gdjs.MainCode.func = function(runtimeScene) {
@@ -125,12 +138,12 @@ gdjs.MainCode.GDMetalRedBarObjects1.length = 0;
 gdjs.MainCode.GDMetalRedBarObjects2.length = 0;
 gdjs.MainCode.GDShopObjects1.length = 0;
 gdjs.MainCode.GDShopObjects2.length = 0;
-gdjs.MainCode.GDNewTextObjects1.length = 0;
-gdjs.MainCode.GDNewTextObjects2.length = 0;
 gdjs.MainCode.GDLevelObjects1.length = 0;
 gdjs.MainCode.GDLevelObjects2.length = 0;
 gdjs.MainCode.GDOnScreenControlsButtonObjects1.length = 0;
 gdjs.MainCode.GDOnScreenControlsButtonObjects2.length = 0;
+gdjs.MainCode.GDBalanceObjects1.length = 0;
+gdjs.MainCode.GDBalanceObjects2.length = 0;
 
 gdjs.MainCode.eventsList1(runtimeScene);
 

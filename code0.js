@@ -6,6 +6,8 @@ gdjs.LoadCode.GDNewText2Objects1= [];
 gdjs.LoadCode.GDNewText2Objects2= [];
 gdjs.LoadCode.GDNewText3Objects1= [];
 gdjs.LoadCode.GDNewText3Objects2= [];
+gdjs.LoadCode.GDBalanceObjects1= [];
+gdjs.LoadCode.GDBalanceObjects2= [];
 
 
 gdjs.LoadCode.asyncCallback10921564 = function (runtimeScene, asyncObjectsList) {
@@ -39,7 +41,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 {gdjs.evtTools.storage.readNumberFromJSONFile("storage", "coin", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(0));
-}{gdjs.evtTools.storage.readNumberFromJSONFile("storage", "click", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1));
+}{gdjs.evtTools.storage.readNumberFromJSONFile("storage", "clck", runtimeScene, runtimeScene.getGame().getVariables().getFromIndex(1));
 }
 { //Subevents
 gdjs.LoadCode.eventsList0(runtimeScene);} //End of subevents
@@ -59,6 +61,8 @@ gdjs.LoadCode.GDNewText2Objects1.length = 0;
 gdjs.LoadCode.GDNewText2Objects2.length = 0;
 gdjs.LoadCode.GDNewText3Objects1.length = 0;
 gdjs.LoadCode.GDNewText3Objects2.length = 0;
+gdjs.LoadCode.GDBalanceObjects1.length = 0;
+gdjs.LoadCode.GDBalanceObjects2.length = 0;
 
 gdjs.LoadCode.eventsList1(runtimeScene);
 
