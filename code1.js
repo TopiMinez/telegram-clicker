@@ -36,7 +36,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.variable.getVariableNumber(runtimeScene.getGame().getVariables().getFromIndex(2)) != 0;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(10505932);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11318332);
 }
 }
 if (isConditionTrue_0) {
@@ -54,7 +54,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "inc") >= 1;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(9107836);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11319220);
 }
 }
 if (isConditionTrue_0) {
@@ -65,7 +65,7 @@ if (isConditionTrue_0) {
 }
 
 
-};gdjs.MainCode.asyncCallback10894836 = function (runtimeScene, asyncObjectsList) {
+};gdjs.MainCode.asyncCallback11322836 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.MainCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Axmed"), gdjs.MainCode.GDAxmedObjects2);
 
@@ -84,14 +84,14 @@ gdjs.MainCode.eventsList1 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.MainCode.localVariables);
 for (const obj of gdjs.MainCode.GDAxmedObjects1) asyncObjectsList.addObject("Axmed", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.MainCode.asyncCallback10894836(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.MainCode.asyncCallback11322836(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.MainCode.asyncCallback10978100 = function (runtimeScene, asyncObjectsList) {
+};gdjs.MainCode.asyncCallback11324236 = function (runtimeScene, asyncObjectsList) {
 asyncObjectsList.restoreLocalVariablesContainers(gdjs.MainCode.localVariables);
 gdjs.copyArray(asyncObjectsList.getObjects("Arman"), gdjs.MainCode.GDArmanObjects2);
 
@@ -110,7 +110,7 @@ gdjs.MainCode.eventsList2 = function(runtimeScene) {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
 asyncObjectsList.backupLocalVariablesContainers(gdjs.MainCode.localVariables);
 for (const obj of gdjs.MainCode.GDArmanObjects1) asyncObjectsList.addObject("Arman", obj);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.MainCode.asyncCallback10978100(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.1), (runtimeScene) => (gdjs.MainCode.asyncCallback11324236(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -261,7 +261,7 @@ for (var i = 0, k = 0, l = gdjs.MainCode.GDMetalRedBarObjects1.length;i<l;++i) {
 gdjs.MainCode.GDMetalRedBarObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11743708);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11325644);
 }
 }
 if (isConditionTrue_0) {
@@ -271,7 +271,7 @@ gdjs.copyArray(runtimeScene.getObjects("Level"), gdjs.MainCode.GDLevelObjects1);
 gdjs.MainCode.GDAxmedObjects1.length = 0;
 
 {for(var i = 0, len = gdjs.MainCode.GDLevelObjects1.length ;i < len;++i) {
-    gdjs.MainCode.GDLevelObjects1[i].getBehavior("Text").setText("Ахмед из Узбекистана");
+    gdjs.MainCode.GDLevelObjects1[i].getBehavior("Text").setText("2. Ахмед из Узбекистана");
 }
 }{for(var i = 0, len = gdjs.MainCode.GDMetalRedBarObjects1.length ;i < len;++i) {
     gdjs.MainCode.GDMetalRedBarObjects1[i].SetMaxValue(10000, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
@@ -319,6 +319,31 @@ gdjs.MainCode.GDBalanceObjects2.length = 0;
 gdjs.MainCode.GDBalanceObjects3.length = 0;
 
 gdjs.MainCode.eventsList3(runtimeScene);
+gdjs.MainCode.GDArmanObjects1.length = 0;
+gdjs.MainCode.GDArmanObjects2.length = 0;
+gdjs.MainCode.GDArmanObjects3.length = 0;
+gdjs.MainCode.GDMetalRedBarObjects1.length = 0;
+gdjs.MainCode.GDMetalRedBarObjects2.length = 0;
+gdjs.MainCode.GDMetalRedBarObjects3.length = 0;
+gdjs.MainCode.GDShopObjects1.length = 0;
+gdjs.MainCode.GDShopObjects2.length = 0;
+gdjs.MainCode.GDShopObjects3.length = 0;
+gdjs.MainCode.GDLevelObjects1.length = 0;
+gdjs.MainCode.GDLevelObjects2.length = 0;
+gdjs.MainCode.GDLevelObjects3.length = 0;
+gdjs.MainCode.GDOnScreenControlsButtonObjects1.length = 0;
+gdjs.MainCode.GDOnScreenControlsButtonObjects2.length = 0;
+gdjs.MainCode.GDOnScreenControlsButtonObjects3.length = 0;
+gdjs.MainCode.GDOnScreenControlsButton2Objects1.length = 0;
+gdjs.MainCode.GDOnScreenControlsButton2Objects2.length = 0;
+gdjs.MainCode.GDOnScreenControlsButton2Objects3.length = 0;
+gdjs.MainCode.GDAxmedObjects1.length = 0;
+gdjs.MainCode.GDAxmedObjects2.length = 0;
+gdjs.MainCode.GDAxmedObjects3.length = 0;
+gdjs.MainCode.GDBalanceObjects1.length = 0;
+gdjs.MainCode.GDBalanceObjects2.length = 0;
+gdjs.MainCode.GDBalanceObjects3.length = 0;
+
 
 return;
 

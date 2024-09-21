@@ -206,6 +206,9 @@ gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.on
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.onCreatedContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.onCreatedContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.onCreatedContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.onCreatedContext.GDObjectObjects2.length = 0;
+
 
 return;
 }
@@ -368,6 +371,10 @@ gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.do
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.doStepPreEventsContext.GDObjectObjects3.length = 0;
 
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.doStepPreEventsContext.eventsList1(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.doStepPreEventsContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.doStepPreEventsContext.GDObjectObjects2.length = 0;
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.doStepPreEventsContext.GDObjectObjects3.length = 0;
+
 
 return;
 }
@@ -458,6 +465,9 @@ gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.Id
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.IdleAnimationNameContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.IdleAnimationNameContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.IdleAnimationNameContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.IdleAnimationNameContext.GDObjectObjects2.length = 0;
+
 
 return "" + eventsFunctionContext.returnValue;
 }
@@ -552,6 +562,9 @@ gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.Se
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetIdleAnimationNameContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetIdleAnimationNameContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetIdleAnimationNameContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetIdleAnimationNameContext.GDObjectObjects2.length = 0;
+
 
 return;
 }
@@ -642,6 +655,9 @@ gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.Fo
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.FocusedAnimationNameContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.FocusedAnimationNameContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.FocusedAnimationNameContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.FocusedAnimationNameContext.GDObjectObjects2.length = 0;
+
 
 return "" + eventsFunctionContext.returnValue;
 }
@@ -736,6 +752,9 @@ gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.Se
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetFocusedAnimationNameContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetFocusedAnimationNameContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetFocusedAnimationNameContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetFocusedAnimationNameContext.GDObjectObjects2.length = 0;
+
 
 return;
 }
@@ -826,6 +845,9 @@ gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.Pr
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.PressedAnimationNameContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.PressedAnimationNameContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.PressedAnimationNameContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.PressedAnimationNameContext.GDObjectObjects2.length = 0;
+
 
 return "" + eventsFunctionContext.returnValue;
 }
@@ -920,6 +942,9 @@ gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.Se
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetPressedAnimationNameContext.GDObjectObjects2.length = 0;
 
 gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetPressedAnimationNameContext.eventsList0(runtimeScene, eventsFunctionContext);
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetPressedAnimationNameContext.GDObjectObjects1.length = 0;
+gdjs.evtsExt__ButtonStates__ButtonAnimationName.ButtonAnimationName.prototype.SetPressedAnimationNameContext.GDObjectObjects2.length = 0;
+
 
 return;
 }
